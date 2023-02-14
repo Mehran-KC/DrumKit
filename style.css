@@ -1,0 +1,36 @@
+body{
+    background-image: url("Black-and-White-Background-14-2560x1600.jpg");
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.key{
+    background-color: rgba(255, 0, 0, 0.205);
+    border-radius: 10px;
+    color: aliceblue;
+    border: 5px solid rgba(0, 0, 255, 0.427);
+    margin-inline-end: 50px;
+    padding: 40px;
+    transition: all .08s;
+
+}
+
+.key:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 127, 7, 0.419);
+    border: 5px solid rgba(0, 183, 255, 0.807);
+    color: rgb(203, 254, 0);
+}
+
+.playing{
+    transform: scale(1.1);
+    background-color: rgba(255, 127, 7, 0.419);
+    border: 5px solid rgba(0, 183, 255, 0.807);
+    color: rgb(203, 254, 0);
+}
