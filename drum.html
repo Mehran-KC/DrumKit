@@ -25,23 +25,6 @@
     <audio data-key="70" src="./Voices/Hi Hat.mp3"></audio>
     <audio data-key="71" src="./Voices/dontknow.mp3"></audio>
 
-    <script>
-        function play(e) {
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            if (!key) return;
-            audio.currentTime = 0;
-            audio.play();
-            key.classList.add("playing")
-        }
-        function removeTransition(e) {
-            if (e.propertyName !== "transform") return;
-            this.classList.remove("playing")
-        }
-        const keys = document.querySelectorAll(".key");
-        keys.forEach(key => key.addEventListener("transitionend", removeTransition))
-        window.addEventListener("keydown", play)
-    </script>
 </body>
 
 </html>
